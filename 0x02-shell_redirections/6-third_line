@@ -1,0 +1,5 @@
+#!/bin/bash
+filename = https://en.wikipedia.org/wiki/Alea_iacta_est
+line_number = 3
+line = $(awk "NR==${line_number}" "$filename")
+echo "Line $line_number: $line"
